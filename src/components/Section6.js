@@ -1,55 +1,68 @@
-import { Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
-import bgImageSection6 from "../resources/images/bgImageIce6.jpg";
-import EventPricingCard from "./EventPricingCard";
+import { Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react"
+import bgImageSection6 from "../resources/images/bgImageIce6.jpg"
+import EventPricingCard from "./EventPricingCard"
 
 const cards = {
-  standard: {
-    category: "standard",
-    price: "36",
+  design: {
+    category: "Cake Design",
+    price: "50",
     services: [
-      "Party Decoration",
-      "Design Cake",
-      "Home Delivery",
-      "Ballon Decoration",
+      "Suisse praliné",
+      "Molly crème meringue",
+      "Ganache au chocolat",
+      "croquant et croustillant",
+      "amandes caramélisées",
     ],
+    description: "À partir de 6 personnes",
+    button: "Commander",
   },
-  premium: {
-    category: "premium",
-    price: "56",
+  wedding: {
+    category: "Wedding Cake",
+    price: "60",
     services: [
-      "Decoration",
-      "Wedding Cakes",
-      "Waiter Service",
-      "Flower Decoration",
+      "Suisse praliné",
+      "Molly crème meringue",
+      "Ganache au chocolat",
+      "croquant et croustillant",
+      "amandes caramélisées",
     ],
+    description: "À partir de 20 personnes",
+    button: "Commander",
   },
-};
+  sale: {
+    category: "Buffet salés",
+    price: "Personnalisé",
+    services: ["Mignardises", "Burger", "Verrines", "Pizza", "Pastilla", "..."],
+    description: "À partir de 6 personnes",
+    button: "En savoir plus",
+  },
+}
 
 export default function Section6() {
   return (
     <Flex
-      position="relative"
+      position='relative'
       backgroundImage={`url(${bgImageSection6})`}
-      color="white"
-      width="full"
-      as="section"
-      paddingBlock="120px"
+      color='white'
+      width='full'
+      as='section'
+      paddingBlock='120px'
       height={["auto", "auto", "auto", "740px", "740px"]}
-      backgroundAttachment="fixed"
+      backgroundAttachment='fixed'
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
-      id="pricing"
+      id='pricing'
       justifyContent={["center", "center", "center", "center", "flex-end"]}
-      className="smt"
+      className='smt'
       paddingInline={["16px", "16px", "16px", "116px", "116px"]}
     >
-      <Stack alignItems="center" textAlign="center">
-        <Heading as="h3" fontSize="3rem" color="white">
-          Event Pricing
+      <Stack alignItems='center' textAlign='center'>
+        <Heading as='h3' fontSize='3rem' color='white'>
+          Prix de nos gâteaux
         </Heading>
-        <SimpleGrid gridRowGap="40px" columns={[1, 1, 1, 2, 2]}>
+        <SimpleGrid gridRowGap='30px' columns={[1, 1, 1, 3, 3]}>
           <EventPricingCard
-            cards={cards.standard}
+            cards={cards.design}
             borderRight={[
               "none",
               "none",
@@ -58,9 +71,19 @@ export default function Section6() {
               "dashed 1px white",
             ]}
           />
-          <EventPricingCard cards={cards.premium} />
+          <EventPricingCard
+            cards={cards.wedding}
+            borderRight={[
+              "none",
+              "none",
+              "none",
+              "dashed 1px white",
+              "dashed 1px white",
+            ]}
+          />
+          <EventPricingCard cards={cards.sale} />
         </SimpleGrid>
       </Stack>
     </Flex>
-  );
+  )
 }

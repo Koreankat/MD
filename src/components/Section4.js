@@ -1,72 +1,69 @@
-import { Flex } from "@chakra-ui/react";
-import bgImageSection4 from "../resources/images/bgImageIce4.jpg";
-import CardEvents from "./EventCard";
-import CakeIcon from "../resources/icons/CakeIcon";
-import SmileBeamIcon from "../resources/icons/SmileBeamIcon";
-import GlassCheersIcon from "../resources/icons/GlassCheersIcon";
-import StarIcon from "../resources/icons/StarIcon";
-import CocktailIcon from "../resources/icons/CocktailIcon";
+import { Flex } from "@chakra-ui/react"
+import bgImageSection4 from "../resources/images/bgImageIce4.jpg"
+import CardEvents from "./EventCard"
+import CakeIcon from "../resources/icons/CakeIcon"
+import SmileBeamIcon from "../resources/icons/SmileBeamIcon"
+import GlassCheersIcon from "../resources/icons/GlassCheersIcon"
+import StarIcon from "../resources/icons/StarIcon"
+import CocktailIcon from "../resources/icons/CocktailIcon"
 
 const statistics = [
   {
-    title: "events",
+    title: "Commandes",
     icon: <StarIcon />,
-    count: "35M",
+    count: "923",
   },
   {
-    title: "happy clients",
+    title: "Client satisfaits",
     icon: <SmileBeamIcon />,
-    count: "70K",
+    count: "670",
   },
   {
-    title: "weddings",
+    title: "Marriages",
     icon: <GlassCheersIcon />,
-    count: "70K",
+    count: "120",
   },
   {
-    title: "custom cakes",
+    title: "Gâteaux personnalisés",
     icon: <CakeIcon />,
-    count: "70K",
+    count: "750",
   },
   {
-    title: "Birthday Party",
+    title: "Fête d'anniversaire",
     icon: <CocktailIcon />,
-    count: "70K",
+    count: "420",
   },
-];
+]
 
 export default function Section4() {
   return (
     <Flex
-      as="section"
-      position="relative"
+      as='section'
+      position='relative'
       backgroundImage={`url(${bgImageSection4})`}
-      color="white"
+      color='white'
       height={["auto", "auto", "auto", "740px", "740px"]}
-      paddingBlock="120px"
-      className="smt"
-      width="full"
+      paddingBlock='120px'
+      className='smt'
+      width='full'
       justifyContent={["center", "center", "center", "flex-end", "flex-end"]}
-      backgroundAttachment="fixed"
+      backgroundAttachment='fixed'
       backgroundPosition={["bottom", "bottom", "bottom", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
       paddingInlineEnd={["0", "0", "0", "116px", "116px"]}
     >
       <Flex
-        alignItems="center"
-        gridGap="40px"
-        alignContent="center"
-        justifyContent="center"
-        flexWrap="wrap"
-        maxWidth="600px"
+        alignItems='center'
+        gridGap='40px'
+        alignContent='center'
+        justifyContent='center'
+        flexWrap='wrap'
+        maxWidth='600px'
       >
         {statistics.map((statistic, key) => (
-          <CardEvents
-            key={key}
-            statistic={statistic}
-          />
+          <CardEvents key={key} statistic={statistic} />
         ))}
       </Flex>
     </Flex>
-  );
+  )
 }
