@@ -7,11 +7,13 @@ import logoWithBlackLetters from "../resources/images/logo.svg"
 export default function Logo({ width, height, variant = "black", ...rest }) {
   return (
     <Box as='figure' objectFit='cover' {...rest}>
-      {variant === "white" ? (
-        <Image src={logoWithBlackLetters} width={width} height={height} />
-      ) : (
-        <Image src={logoWithWhiteLetters} width={width} height={height} />
-      )}
+      <a href='#home'>
+        {variant === "white" ? (
+          <Image src={logoWithBlackLetters} width={width} height={height} />
+        ) : (
+          <Image src={logoWithWhiteLetters} width={width} height={height} />
+        )}
+      </a>
     </Box>
   )
 }
