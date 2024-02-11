@@ -29,6 +29,9 @@ export default function EventPricingCard({ cards, ...rest }) {
       <Text paddingBlockStart='27px' fontWeight='700'>
         {cards.description}
       </Text>
+      <Text paddingBlockStart='27px' fontWeight='700'>
+        {cards.subdescription}
+      </Text>
       {cards.category.includes("Buffet") ? (
         <Heading paddingBlockStart='24px' fontSize='38px' as='h6'>
           {cards.price}

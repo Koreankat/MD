@@ -5,7 +5,7 @@ import EventPricingCard from "./EventPricingCard"
 const cards = {
   design: {
     category: "Cake Design",
-    price: "50",
+    price: "60",
     services: [
       "Suisse praliné",
       "Molly crème meringue",
@@ -13,7 +13,8 @@ const cards = {
       "croquant et croustillant",
       "amandes caramélisées",
     ],
-    description: "À partir de 6 personnes",
+    description: "À partir de 8 personnes",
+
     button: "Commander",
   },
   wedding: {
@@ -26,14 +27,15 @@ const cards = {
       "croquant et croustillant",
       "amandes caramélisées",
     ],
-    description: "À partir de 20 personnes",
+    description: "À partir de 15 personnes",
+    subdescription: "et 50Dhs à partir de 25 personnes",
     button: "Commander",
   },
   sale: {
     category: "Buffet salés",
     price: "Personnalisé",
     services: ["Mignardises", "Burger", "Verrines", "Pizza", "Pastilla", "..."],
-    description: "À partir de 6 personnes",
+
     button: "En savoir plus",
   },
 }
@@ -54,7 +56,7 @@ export default function Section6() {
       id='pricing'
       justifyContent={["center", "center", "center", "center", "flex-end"]}
       className='smt'
-      paddingInline={["16px", "16px", "16px", "116px", "116px"]}
+      paddingInline={["16px", "16px", "16px", "116px", "16px"]}
     >
       <Stack alignItems='center' textAlign='center'>
         <Heading as='h3' fontSize='3rem' color='white'>
