@@ -41,19 +41,21 @@ export default function Section8() {
         <OrderForm />
         <Heading as='h5'>
           Ou commandez par whatsapp
-          <Button
-            textTransform='capitalize'
-            color='charlestonGreen.900'
-            backgroundColor='#25D366'
-            blobColor='candyPink.900'
-            type='submit'
-            _before='none'
-            margin='10px'
-            _hover={{ color: "white" }}
-            _focus={{ color: "white" }}
-          >
-            Contacter
-          </Button>
+          <a href='https://api.whatsapp.com/send/?phone=212669907968&text&type=phone_number&app_absent=0'>
+            <Button
+              textTransform='capitalize'
+              color='charlestonGreen.900'
+              backgroundColor='#25D366'
+              blobColor='candyPink.900'
+              type='submit'
+              _before='none'
+              margin='10px'
+              _hover={{ color: "white" }}
+              _focus={{ color: "white" }}
+            >
+              Contacter
+            </Button>
+          </a>
         </Heading>{" "}
       </Stack>
     </Flex>
