@@ -11,18 +11,21 @@ const ratingCard = [
       "Au nom de toute l'équipe, je tiens à vous remercier pour ce gâteau professionnel et délicieux que tu as préparé pour nous. C'était vraiment apprécié ...",
     created_at: "07-Février-2024",
     img: lessieur,
+    alt: "Lessieur logo",
   },
   {
     description:
       "Merci beaucoup ma chérie, 7emerti lia wejhi durant notre collabe avec magiclear, c'était magnifique 😘",
     img: magiclear,
     created_at: "03-Décembre-2023",
+    alt: "Magiclear logo",
   },
   {
     description:
       "Merci beaucoup, c'était exactement ce que je voulais et meme mieux ❤️",
     created_at: "14-Janvier-2024",
     img: woman,
+    alt: "Woman logo",
   },
 ]
 
@@ -46,7 +49,7 @@ export default function Section7() {
       className='smt'
     >
       {ratingCard.map((card, key) => (
-        <RatingCard key={key} data={card} img={card.img} />
+        <RatingCard key={key} data={card} img={card.img} alt={card.alt} />
       ))}
     </Flex>
   )

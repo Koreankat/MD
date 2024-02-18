@@ -66,6 +66,7 @@ export default function RatingCard({ data, img }) {
         transform='translateX(-50%)'
         left='50%'
         src={img}
+        alt={data.alt}
       />
     </Stack>
   )

@@ -9,9 +9,19 @@ export default function Logo({ width, height, variant = "black", ...rest }) {
     <Box as='figure' objectFit='cover' {...rest}>
       <a href='#home'>
         {variant === "white" ? (
-          <Image src={logoWithBlackLetters} width={width} height={height} />
+          <Image
+            src={logoWithBlackLetters}
+            width={width}
+            height={height}
+            alt='maison delices logo'
+          />
         ) : (
-          <Image src={logoWithWhiteLetters} width={width} height={height} />
+          <Image
+            src={logoWithWhiteLetters}
+            width={width}
+            height={height}
+            alt='maison delices logo'
+          />
         )}
       </a>
     </Box>
