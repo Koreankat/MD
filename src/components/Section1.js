@@ -1,5 +1,5 @@
 import { Flex, Stack, Text, Heading } from "@chakra-ui/react"
-import bgImageSection1 from "../resources/images/bgCake.png"
+import bgImageSection1 from "../resources/images/bgCake.webp"
 import Button from "./ButtonBlob"
 
 export default function Section1() {

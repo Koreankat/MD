@@ -11,6 +11,8 @@ export default function PercentageCircle({ title, percentage }) {
         color='white'
         thickness={"4px"}
         trackColor='#D3AD98'
+        aria-labelledby='progress bar'
+        aria-label='progress bar'
       >
         <CircularProgressLabel fontSize='body' fontWeight='700'>
           {percentage}%
