@@ -26,10 +26,10 @@ export default function Section9() {
     >
       <Stack marginInline={["auto", "auto", "auto", "0", "0"]}>
         <Heading as='h4' fontSize='50px'>
-          La Maison Des Délices
+          Cake Design ~ La Maison Des Délices
         </Heading>
         <Stack gridGap='20px'>
-          <Text>117 Avenue stendhal.</Text>
+          <Text>117 Avenue stendhal, Casablanca.</Text>
           {data.map((info, key) => (
             <Text
               textTransform='initial'

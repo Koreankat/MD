@@ -33,7 +33,7 @@ export default function Section1() {
           lineHeight='1.2em'
           zIndex='2'
         >
-          Cake Design <br /> Shop
+          Cake Design <br /> Shop Casablanca
         </Heading>
         <Text
           fontSize='20px'
@@ -42,11 +42,12 @@ export default function Section1() {
           letterSpacing='0.2px'
           marginBlockEnd='36px !important'
         >
-          À chaque bouchée une nouvelle saveur. La maison des délices
-          <br /> vous fait decouvrir un monde magique de gâteaux
+          À chaque bouchée une nouvelle saveur. Cake Design ~ La Maison Des
+          Délices
+          <br /> vous fait decouvrir un monde magique de gâteaux personnalisés
         </Text>
         <a href='https://api.whatsapp.com/send/?phone=212669907968&text&type=phone_number&app_absent=0'>
-          <Button>Contactez nous</Button>
+          <Button>Contactez-nous</Button>
         </a>
       </Stack>
     </Flex>

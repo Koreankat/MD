@@ -46,7 +46,7 @@ export default function Section3() {
           fontSize='body'
           lineHeight='1.2'
         >
-          20 Ans et plus d'expérience
+          20 Ans et plus d'expérience dans le Cake Design
         </Text>
         <Heading as='h2' color='#4F3832' fontSize='40px'>
           Nos specialités
