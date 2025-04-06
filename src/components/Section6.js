@@ -60,7 +60,7 @@ export default function Section6() {
     >
       <Stack alignItems='center' textAlign='center'>
         <Heading as='h3' fontSize='3rem' color='white'>
-          Prix de nos gâteaux
+          Nos Gateaux
         </Heading>
         <SimpleGrid gridRowGap='30px' columns={[1, 1, 1, 3, 3]}>
           <EventPricingCard
